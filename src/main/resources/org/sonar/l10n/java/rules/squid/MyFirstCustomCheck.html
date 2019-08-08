@@ -1,0 +1,32 @@
+<p>Can't abc</p>
+<h2>Noncompliant Code Example</h2>
+<pre>
+    private String abc;// Noncompliant
+    private String aabc;// Noncompliant
+    private String abcc;// Noncompliant
+    public void test(String abc, String abcc,String aabc,String aabcc){ // Noncompliant
+    }
+
+    public void abc(){}  // Noncompliant
+
+    public void abcc(){}  // Noncompliant
+
+	public void aabcc(){}  // Noncompliant
+	
+	public void aabc(){}  // Noncompliant
+	
+	public void test(){
+		int abc;		// Noncompliant
+		String s = "abc"; // Noncompliant
+	}
+
+</pre>
+<h2>Compliant Solution</h2>
+<pre>
+    private String Hi;
+
+    public void test(String Hi){
+    }
+
+    public void test(){}
+</pre>
